@@ -3,6 +3,7 @@ import Threads from "../src/components/Threads";
 import { useForm } from "react-hook-form";
 import PdfViewer from "./PdfViewer";
 import sendEmail from "../services/mailServices";
+import cv from "/CVPortfolio.pdf";
 
 const wait = function (duration = 1000) {
   return new Promise((resolve) => {
