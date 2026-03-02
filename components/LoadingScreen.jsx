@@ -29,7 +29,7 @@ const LoadingScreen = ({ onFadeOut }) => {
             animationData={animationData}
             loop={false}
             onComplete={handleAnimationComplete}
-            className="h-48 w-48"
+            className="h-70 w-70"
           />
         </div>
       </motion.div>

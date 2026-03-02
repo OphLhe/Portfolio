@@ -1,8 +1,7 @@
 import AnimatedContent from "../src/components/AnimatedContent";
 import forEach from "../src/public/ForEach.png";
-import bac from "../src/public/bac.webp";
+import bac from "../src/public/Bac.webp";
 import cfpts from "../src/public/CFPTS.png";
-import React from 'react'
 
 const trainingsData = [
   {
