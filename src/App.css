@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+#root {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dark {
+  background-color: #030712;
+  color: #f6f2e4;
+  --footer-bg: #030712;
+  --projectItem-text: #f6f2e4;
+}
+
+@layer base {
+  :root {
+    background-color: #f6f2e4;
+    --footer-bg: #f6f2e4;
+    --projectItem-text: #f6f2e4;
+    --trainingCard-bg: #030712;
+    --trainingCard-text: #f6f2e4;
+    --color-gradient-start: #4f7d51;
+    --color-gradient-end: #f6f2e4;
+    --color-evergreen-50: #eff5f0;
+    --color-evergreen-100: #e0ebe0;
+    --color-evergreen-200: #c0d8c1;
+    --color-evergreen-300: #a1c4a3;
+    --color-evergreen-400: #82b084;
+    --color-evergreen-500: #629d65;
+    --color-evergreen-600: #4f7d51;
+    --color-evergreen-700: #3b5e3d;
+    --color-evergreen-800: #273f28;
+    --color-evergreen-900: #141f14;
+    --color-evergreen-950: #0e160e;
+  }
+}
+
+@layer components {
+  .linksLargeScreen {
+    font-weight: bold;
+    padding: 2px 3px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .linksLargeScreen:hover {
+    transform: scale(1.2);
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-evergreen-950)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .dark .linksLargeScreen:hover {
+    transform: scale(1.2);
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .linksSmallScreen {
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-evergreen-950)
+    );
+    color: #f6f2e4;
+  }
+
+  .dark .linksSmallScreen {
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+    color: #030712;
+  }
+
+  .active {
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-evergreen-950)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .dark .active {
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .social {
+    color: #273f28;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .dark .social {
+    color: #82b084;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  .social:hover {
+    transform: scale(1.2);
+  }
+
+  .expanded {
+    background-color: #273f28;
+  }
+
+  .dark .button {
+    margin-top: 16px;
+    background-color: #3b5e3d;
+    padding: 8px 16px;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+  .button {
+    margin-top: 16px;
+    background-color: #4f7d51;
+    padding: 8px 16px;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #629d65;
+    box-shadow: #4f7d51 2px 2px 15px;
+  }
+  .dark .button:hover {
+    background-color: #4f7d51;
+    box-shadow: #4f7d51 2px 2px 15px;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 16px;
+  width: 100%;
+}
