@@ -10,6 +10,7 @@ if (!API_URL) {
 
 const API = axios.create({
     baseURL: `${API_URL}/api`,
+    timeout: 10000, // 10 secondes
 })
 
 export default API;
