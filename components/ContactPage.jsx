@@ -76,11 +76,6 @@ const ContactPage = () => {
                   className="rounded-lg border-2 border-(--color-evergreen-600) p-4 text-base inset-shadow-[0_0_12px_1px_var(--color-evergreen-600)] backdrop-blur-md md:p-6 lg:text-xl xl:w-2/3"
                   onSubmit={handleSubmit(onSubmit)}
                 >
-                  {isSubmitSuccessful && (
-                    <div className="mb-4 rounded bg-green-100 p-3 text-center text-base text-green-800">
-                      Message envoyé avec succès !
-                    </div> 
-                  )}
                   <div className="mx-3 mb-6 flex flex-wrap">
                     <input
                       className="hidden"
@@ -202,6 +197,11 @@ const ContactPage = () => {
                         value={isSubmitting ? "Envoi en cours..." : "Envoyer"}
                         disabled={isSubmitting}
                       />
+                      {isSubmitSuccessful && (
+                        <div className="mb-4 rounded bg-green-100 p-3 text-center text-base text-green-800">
+                          Message envoyé avec succès !
+                        </div>
+                      )}
                     </div>
                   </div>
                 </form>
