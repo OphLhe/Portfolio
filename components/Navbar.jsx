@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
-import React from 'react'
-import logo from "../src/public/logoPortfolio.png";
+import logo from "/logoPortfolio.png";
 import { NavLink } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,7 +1,7 @@
 import AnimatedContent from "../src/components/AnimatedContent";
-import forEach from "../src/public/ForEach.png";
-import bac from "../src/public/Bac.webp";
-import cfpts from "../src/public/CFPTS.png";
+import forEach from "/ForEach.png";
+import bac from "/Bac.webp";
+import cfpts from "/CFPTS.png";
 
 const trainingsData = [
   {

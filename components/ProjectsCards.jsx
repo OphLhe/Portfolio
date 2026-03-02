@@ -1,7 +1,6 @@
-import dices from "../src/public/dices.png";
-import React from 'react'
-import fastaFood from "../src/public/logo_fastaFood.png";
-import portfolio from "../src/public/portfolio.png";
+import dices from "/dices.png";
+import fastaFood from "/logo_fastaFood.png";
+import portfolio from "/portfolio.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { useState } from "react";

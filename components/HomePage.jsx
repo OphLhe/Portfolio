@@ -1,6 +1,5 @@
 import Threads from "../src/components/Threads";
 import AnimatedContent from "../src/components/AnimatedContent";
-import React from 'react'
 
 const Home = () => {
   return (

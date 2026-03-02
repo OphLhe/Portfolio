@@ -1,6 +1,5 @@
 // DarkModeToggle.jsx
 import { useState, useEffect } from "react";
-import React from 'react'
 
 const DarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);

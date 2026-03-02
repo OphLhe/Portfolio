@@ -1,6 +1,5 @@
 import Lottie from "lottie-react";
-import React from 'react'
-import animationData from "../src/public/Logo.json";
+import animationData from "/Logo.json";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,4 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
-import React from 'react'
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

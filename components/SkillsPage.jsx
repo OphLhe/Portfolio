@@ -1,5 +1,4 @@
 import Threads from "../src/components/Threads";
-import React from 'react'
 import AnimatedContent from "../src/components/AnimatedContent";
 import SkillsTab from "./SkillsTab";
 

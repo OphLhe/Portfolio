@@ -1,11 +1,10 @@
-import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logoReactBits from "../src/public/reactBitsLogo.png";
-import logoExpress from "../src/public/icons8-express-js-100.png";
-import logoMysql from "../src/public/MySQL_logo.svg";
-import logoPostman from "../src/public/postmanLogo.png";
+import logoReactBits from "/reactBitsLogo.png";
+import logoExpress from "/icons8-express-js-100.png";
+import logoMysql from "/MySQL_logo.svg";
+import logoPostman from "/postmanLogo.png";
 import {
   faBootstrap,
   faCss3Alt,
