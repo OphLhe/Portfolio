@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import React from 'react'
 import * as pdfjsLib from "pdfjs-dist";
-import cv from "../src/public/CVPortfolio.pdf";
+import cv from "/CVPortfolio.pdf";
 import AnimatedContent from "../src/components/AnimatedContent";
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.js";
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url,
+).toString();
 
 const PdfViewer = () => {
   const canvasRef = useRef(null);

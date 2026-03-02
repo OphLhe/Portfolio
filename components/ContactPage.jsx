@@ -1,13 +1,8 @@
 import AnimatedContent from "../src/components/AnimatedContent";
 import Threads from "../src/components/Threads";
 import { useForm } from "react-hook-form";
-import * as pdfjsLib from "pdfjs-dist";
 import PdfViewer from "./PdfViewer";
-import cv from "../src/public/CVPortfolio.pdf";
-import cvFull from "../src/public/LhermitteOphelieCVDevFS.pdf"
 import sendEmail from "../services/mailServices";
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = "../src/public/pdf.worker.mjs";
 
 const wait = function (duration = 1000) {
   return new Promise((resolve) => {
@@ -16,7 +11,6 @@ const wait = function (duration = 1000) {
 };
 
 const ContactPage = () => {
-
   const {
     register,
     handleSubmit,
@@ -28,7 +22,10 @@ const ContactPage = () => {
       await wait(2000);
       await sendEmail(formData);
     } catch (error) {
-      console.error("Erreur lors de l'envoi :", error.response?.data || error.message);
+      console.error(
+        "Erreur lors de l'envoi :",
+        error.response?.data || error.message,
+      );
     }
   };
 
@@ -62,9 +59,13 @@ const ContactPage = () => {
             <div className="flex flex-col md:gap-15 lg:flex-row">
               <section className="mt-6 flex flex-col items-center justify-center">
                 <h2>Mon Cv</h2>
-                <a href={cvFull}
-                download= "LhermitteOphelieCVDevFS.pdf"
-                className="button text-base md:text-xl mb-6">Télécharger le CV</a>
+                <a
+                  href="/LhermitteOphelieCVDevFS.pdf"
+                  download="LhermitteOphelieCVDevFS.pdf"
+                  className="button mb-6 text-base md:text-xl"
+                >
+                  Télécharger le CV
+                </a>
                 <PdfViewer file={cv}></PdfViewer>
               </section>
 
