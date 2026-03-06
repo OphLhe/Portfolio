@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import "./index.css";
-import LoadingScreen from "../components/LoadingScreen";
-import HomePage from "../components/HomePage";
-import ProjectsPage from "../components/ProjectsPage";
-import TrainingsPage from "../components/TrainingsPage";
-import SkillsPage from "../components/SkillsPage";
-import ContactPage from "../components/ContactPage";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import LoadingScreen from "../components/LoadingScreen.jsx";
+import HomePage from "../components/HomePage.jsx";
+import ProjectsPage from "../components/ProjectsPage.jsx";
+import TrainingsPage from "../components/TrainingsPage.jsx";
+import SkillsPage from "../components/SkillsPage.jsx";
+import ContactPage from "../components/ContactPage.jsx";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BrowserRouter as Router,
