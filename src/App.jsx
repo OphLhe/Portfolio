@@ -10,6 +10,7 @@ import ContactPage from "../components/ContactPage.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import { AnimatePresence, motion } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   BrowserRouter as Router,
   Route,
@@ -58,6 +59,7 @@ function App() {
           <AppRoutes />
         )}
       </AnimatePresence>
+      <SpeedInsights />
     </Router>
   );
 }
