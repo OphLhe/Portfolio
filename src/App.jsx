@@ -16,6 +16,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function AppRoutes() {
   const location = useLocation();
@@ -58,6 +59,7 @@ function App() {
           <AppRoutes />
         )}
       </AnimatePresence>
+      <SpeedInsights />
     </Router>
   );
 }
