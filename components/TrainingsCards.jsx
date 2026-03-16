@@ -10,7 +10,7 @@ const trainingsData = [
     alt: "logo de ForEach Academy",
     name: "Titre RNCP niveau 6, CDA.",
     years: "2026-2028",
-    location: "ForEach Academy, Lille (59)",
+    location: "(en alternance) en recherche d'entreprise, ForEach Academy, Lille (59)",
     description: `Formation Concepteur Développeur d'Applications,
         apprentissage de Java, framework Spring, culture DevOps, initiation Data, etc.`,
     link: "https://www.foreach-academy.fr/le-bachelor-foreach/",
