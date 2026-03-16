@@ -70,9 +70,9 @@ const TrainingsItem = ({ training }) => {
         <div className="flex w-full flex-col justify-center p-4">
           <div className="mb-8">
             <p className="mb-3 flex align-text-top text-base">{training.years}</p>
-            <p className="mb-4 text-base font-bold underline underline-offset-5 md:text-xl">
+            <h3 className="mb-4 text-base font-bold underline underline-offset-5 md:text-xl">
               {training.name}
-            </p>
+            </h3>
             <p className="text-sm lg:text-base">{training.description}</p>
           </div>
           <div className="flex items-center justify-center">
